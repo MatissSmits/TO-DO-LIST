@@ -1,0 +1,126 @@
+/* Iekļaujiet polsterējumu un apmali elementa kopējā platumā un augstumā */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Noņemiet no saraksta piemales un polsterējumu */
+  ul {
+  
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stila saraksta vienumi */
+  ul li {
+
+    
+
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 20px;
+    transition: 0.2s;
+  
+    /* padarīt saraksta vienumus neizvēlamus */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Iestatiet visus nepāra saraksta vienumus citā krāsā (zebras joslas) */
+  ul li:nth-child(odd) {
+    opacity:1;
+    
+  }
+  
+  /* Tumšāka fona krāsa kursorā */
+  ul li:hover {
+    opacity:1;
+    
+  }
+  
+  /* Noklikšķinot uz, pievienojiet fona krāsu un svītrojiet tekstu */
+  ul li.checked {
+    opacity:1;
+
+    color: rgb(44, 212, 94);
+    text-decoration: line-through;
+  }
+  
+  /* Kad noklikšķina, pievienojiet atzīmi "atzīmēts" */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(44, 212, 94);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Veidojiet aizvēršanas pogu */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+   
+    color: rgb(78, 60, 233);
+  }
+  
+  /* Stila galveni */
+  .header {
+    opacity:1;
+
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Skaidrs peld pēc galvenes */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Ievades stils */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Veidojiet pogu "Pievienot" */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: rgb(134, 255, 123);
+    color: rgb(0, 2, 0);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: rgba(193, 243, 197, 0.555);
+    
+  }
+  .aizmugure{
+      opacity:0.8;
+  }
